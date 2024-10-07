@@ -2453,6 +2453,7 @@ function library:Init()
     if runService:IsStudio() then
         self.base.Parent = script.Parent.Parent
     elseif syn then
+        syn.protect_gui(self.base)
         pcall(function() self.base.RobloxLocked = true end)
         self.base.Parent = game:GetService"CoreGui"
     end
