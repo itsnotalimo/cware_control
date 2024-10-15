@@ -3173,9 +3173,7 @@ function DiscordLib:Window(text)
 				
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 
-				return function(newText)
-					LabelTitle.Text = newText
-				end
+				return LabelTitle
 			end
 			
 			function ChannelContent:Bind(text, presetbind, callback)
