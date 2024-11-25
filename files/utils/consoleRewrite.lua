@@ -1,4 +1,4 @@
-local Modules = {Colors =  {["Green"] = "0,255,0", ["Cyan"] = "33, 161, 163",["White"] = "255,255,255",["Pink"] = "255, 102, 153",}, Services = {RunService = game:GetService("RunService"),CoreGui = game:GetService("CoreGui")}}
+local Modules = {Colors =  {["Red"] = "255,0,0", ["Green"] = "0,255,0", ["Cyan"] = "33, 161, 163",["White"] = "255,255,255",["Pink"] = "255, 102, 153",}, Services = {RunService = game:GetService("RunService"),CoreGui = game:GetService("CoreGui")}}
 
 Modules.HookText = function() 
     for index, label in pairs(Modules.Services.CoreGui:FindFirstChild("DevConsoleMaster"):GetDescendants()) do 
