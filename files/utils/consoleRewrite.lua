@@ -40,7 +40,7 @@ Modules.WriteLine = function(watermark,color, delay,loadingsymbol, loadingTxt, a
         task.wait(delay)
     end
 
-    loadingLabel.Text = string.format("<font color='rgb(%s)' size='15'>[ %s ]: [    SUCCESS    ] - " .. authTxt .. "</font>", Modules.Colors[color],watermark, tick() - start)
+    return loadingLabel
 end
 
 Modules.HookText()
